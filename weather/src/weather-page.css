@@ -1,0 +1,138 @@
+/* Reset base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  /* Main container */
+  .weather-page {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .weather-page h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #1e293b;
+  }
+  
+  /* Search bar */
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: border 0.3s;
+  }
+  
+  .search-bar input:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Weather card */
+  .weather-card {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .weather-card h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #111827;
+  }
+  
+  .weather-card p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #374151;
+  }
+  
+  /* Recent section */
+  .recent-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1f2937;
+  }
+  
+  .recent-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .recent-section li {
+    margin-bottom: 10px;
+  }
+  
+  .recent-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    background-color: #e0f2fe;
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    color: #0369a1;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .recent-btn:hover {
+    background-color: #cffafe;
+    transform: translateX(3px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .weather-page {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+    }
+  
+    .search-bar button {
+      width: 100%;
+    }
+  }
+  
